@@ -15,15 +15,16 @@
 
 <h1> Hola 👋 I'm Jobs.</h1>
 
->TheDoor_eyJuYW1lIjoiSm9ic2FtdWVsIE51bmV6IiwiYmlydGhkYXRlIjoiMTk5MC0wMS0wOFQwNDowMDowMC4wMDBaIiwiY291bnRyeSI6IlZlbmV6dWVsYSDwn4e78J+HqiIsImF2YWlsYWJsZV9mb3JfaGlyZSI6dHJ1ZSwibGFuZ3VhZ2VzIjpbIkphdmFTY3JpcHQiLCJFbmdsaXNoIiwiU3BhbmlzaCJdLCJ0ZWNoX3N0YWNrIjpbIkZpcmViYXNlIiwiTm9kZS5qcyIsIlZlcmNlbCIsIk5leHQuanMiLCJSZWFjdCJdfQ==
+>DOOR_eyJuYW1lIjoiSm9ic2FtdWVsIE51bmV6IiwiZGVzY3JpcHRpb24iOiJBbiBlbmdpbmVlciB3aG8gbG92ZSB0byBjcmVhdGUgc2ltcGxlIGFuZCBwb3dlcmZ1bCBzb2x1dGlvbnMgd2l0aCBKYXZhc2NyaXB0LiIsImVtYWlsIjoiaG9sYUBqb2JzYS5jbyIsImJpcnRoZGF0ZSI6IjE5OTAtMDEtMDhUMDQ6MDA6MDAuMDAwWiIsImNvdW50cnkiOiJWZW5lenVlbGEg8J+Hu/Cfh6oiLCJhdmFpbGFibGVfZm9yX2hpcmUiOnRydWUsImhvdXJseV9yYXRlX2luX3VzZCI6NTAsImFjY2VwdF9idGNfYXNfcGF5bWVudCI6dHJ1ZSwibGFuZ3VhZ2VzIjpbIkphdmFTY3JpcHQiLCJFbmdsaXNoIiwiU3BhbmlzaCJdLCJmYXZvcml0ZV90ZWNoX3N0YWNrIjpbeyJuYW1lIjoiRmlyZWJhc2UiLCJleHBlcmllbmNlIjoic2luY2UgaXRzIEJFVEEgbGF1bmNoLiDwn5SlIn0seyJuYW1lIjoiTm9kZS5qcyIsImV4cGVyaWVuY2UiOiJEdXJpbmcgbXkgZW50aXJlIGNhcmVlciwgZXZlcnkgYXBwIEkndmUgY3JlYXRlZCBoYXZlIGJlZW4gcG93ZXJlZCBieSBOb2RlLiDwn6SYIn0seyJuYW1lIjoiUmVhY3QiLCJleHBlcmllbmNlIjoiU2luY2UgMjAxOCwgSSBqdXN0IGxvdmUgdG8gY3JlYXRlIFVJcyB3aXRoIFJlYWN0LiDwn6SpIn1dLCJmYXZvcml0ZV9vZmZsaW5lX2FjdGl2aXRpZXMiOlsiY3ljbGluZyIsInJ1bm5pbmciLCJwaG90b2dyYXBoeSJdLCJpbnRlcmVzdHMiOlsiY3J5cHRvIiwibWFjaGluZSBsZWFybmluZyIsImRhdGEgcHJvY2Vzc2luZyIsIm1hcHMiLCJlY29tbWVyY2UiLCJib3RzIiwiQVBJcyJdfQ==
+
 
 ```js
-// The key.
-function decodeData(token) { 
+// KEY.
+function decodeData(token) {
   const encoded = token.split('_')[1]
   const json = Buffer.from(encoded, 'base64').toString()
   const data = JSON.parse(json)
-  
+
   return data   
 }
 
@@ -31,24 +32,63 @@ function decodeData(token) {
 ```
 
 <!--
+🎉🎉🎉
+Here is the decoded data because you are the one who "work smarter, not harder."
+
 ```json
 {
   "name": "Jobsamuel Nunez",
+  "description": "An engineer who love to create simple and powerful solutions with Javascript.",
+  "email": "hola@jobsa.co",
   "birthdate": "1990-01-08T04:00:00.000Z",
   "country": "Venezuela 🇻🇪",
   "available_for_hire": true,
+  "hourly_rate_in_usd": 50,
+  "accept_btc_as_payment": true,
   "languages": [
     "JavaScript",
     "English",
-    "Spanish",
+    "Spanish"
   ],
-  "tech_stack": [
-    "Firebase",
-    "Node.js",
-    "Vercel",
-    "Next.js",
-    "React",
+  "favorite_tech_stack": [
+    {
+      "name": "Firebase",
+      "experience": "since its BETA launch. 🔥"
+    },
+    {
+      "name": "Node.js",
+      "experience": "During my entire career, every app I've created have been powered by Node. 🤘"
+    },
+    {
+      "name": "React",
+      "experience": "Since 2018, I just love to create UIs with React. 🤩"
+    }
+  ],
+  "favorite_offline_activities": [
+    "cycling",
+    "running",
+    "photography"
+  ],
+  "interests": [
+    "crypto",
+    "machine learning",
+    "data processing",
+    "maps",
+    "ecommerce",
+    "bots",
+    "APIs"
   ]
+}
+```
+
+And this is the script used to hide at plain sight.
+```js
+function encodeData(prefix, data) {
+  const json = JSON.stringify(data)
+  const encoded = Buffer.from(json).toString('base64')
+  const token = [prefix, encoded].join('_')
+
+  return token
 }
 ```
 -->
