@@ -39,7 +39,7 @@ Here is the decoded data because you are the one who "work smarter, not harder."
 ```json
 {
   "name": "Jobsamuel Nunez",
-  "description": "An engineer who love to create simple and powerful solutions with Javascript.",
+  "description": "An engineer who love to create simple and powerful solutions using Internet.",
   "email": "hola@jobsa.co",
   "birthdate": "1990-01-08T04:00:00.000Z",
   "country": "Venezuela 🇻🇪",
