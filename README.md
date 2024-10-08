@@ -6,7 +6,6 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original-wordmark.svg" alt="nextjs" width="25" height="25" />
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" width="25" height="25" />
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="25" height="25" />
-  <img src="https://docs.soliditylang.org/en/v0.8.7/_images/logo.svg" alt="solidity" width="25" height="25" />
   <img src="https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/57x57.png" alt="vercel" width="25" height="25" />
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg" alt="firebase" width="25" height="25" />
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg" alt="nodejs" width="25" height="25" />
